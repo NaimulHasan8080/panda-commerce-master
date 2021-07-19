@@ -17,7 +17,7 @@
 <body style="background-color: #E5E5E5;">
     <header>
         <section class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="#"> <img src="images/logo.png" alt=""
                             class="d-inline-block align-text-top">
@@ -34,13 +34,13 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shoes</a>
+                                <a class="nav-link" href="#shoes">Shoes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Backpack</a>
+                                <a class="nav-link" href="#backpack">Backpack</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Subscriber</a>
+                                <a class="nav-link" href="#subscriber">Subscriber</a>
                             </li>
                         </ul>
                     </div>
@@ -136,7 +136,7 @@
         </div>
         </section>
         <!-- shoes -->
-        <section class="container my-4">
+        <section class="container my-4" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col rounded-3">
@@ -183,7 +183,7 @@
         </section>
 
         <!-- bags -->
-        <section class="container my-6">
+        <section class="container my-4" id="backpack">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col rounded-3">
@@ -229,17 +229,19 @@
         </section>
 
         <!-- submit -->
-        <div class="container mt-4">
-            <div class="text-center">
+        <section id="subscriber" style="height: 300px;"
+            class="container my-4 d-flex bg-secondary justify-content-center align-items-center rounded-3">
+            <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <h5>Get updates on sales, specials and more</h5>
-                <input type="text" name="" id=""><br>
-                <button class="btn btn-warning" type="submit">Submit</button>
+                <input placeholder="Email">
+                <br>
+                <button class="btn btn-warning text-white" type="submit">Submit</button>
             </div>
-        </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="text-center mt-5">
+        <small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
     </footer>
 
     <!-- link javascript -->
